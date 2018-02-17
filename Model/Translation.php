@@ -37,13 +37,13 @@ class Translation extends I18nAppModel {
  */
 	public $validate = array(
 		'locale' => array(
-			'notempty' => array('rule' => array('notempty'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Locale')),
+			'notBlank' => array('rule' => array('notBlank'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Locale')),
 		'model' => array(
-			'notempty' => array('rule' => array('notempty'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Model')),
+			'notBlank' => array('rule' => array('notBlank'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Model')),
 		'foreign_key' => array(
-			'notempty' => array('rule' => array('notempty'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Foreign Key')),
+			'notBlank' => array('rule' => array('notBlank'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Foreign Key')),
 		'field' => array(
-			'notempty' => array('rule' => array('notempty'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Field')),
+			'notBlank' => array('rule' => array('notBlank'), 'required' => true, 'allowEmpty' => false, 'message' => 'Please enter a Field')),
 	);
 
 /**
